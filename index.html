@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math and HD bot</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <div class="paralax content1">
+        <div class="container animate__animated animate__rotateInDownLeft">
+            <h1 id="h1" class="animate__animated"></h1>
+            <form style="margin: 10px;">
+                <div class="input-box">
+                    <input type="text" id="input1" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="input2" required>
+                </div>
+            </form>
+            <div class="pilihan animate__animated animate__zoomInDown animate__delay-0.5s">
+                <select id="pilihan">
+                    <option value="lingkaran">Luas Lingkaran</option>
+                    <option value="keliling-lingkaran">Keliling Lingkaran</option>
+                    <option value="segitiga">Luas Segitiga</option>
+                    <option value="keliling-segitiga">Keliling Segitiga</option>
+                    <option value="persegi">Luas Persegi</option>
+                    <option value="keliling-persegi">Keliling Persegi</option>
+                    <option value="persegi panjang">Luas Persegi Panjang</option>
+                    <option value="keliling-persegi panjang">Keliling Persegi Panjang</option>
+                    <option value="jajargenjang">Luas Jajargenjang</option>
+                    <option value="Keliling-jajargenjang">Keliling Jajargenjang</option>
+                    <option value="layang-layang">Luas Layang-Layang</option>
+                    <option value="keliling-layang-layang">Keliling Layang-Layang</option>
+                </select>
+            </div>
+            <div class="hasil" id="hasil1"></div>
+        </div>
+    </div>
+    <div class="paralax content2">
+        <div class="container animate__animated animate__rotateInDownLeft">
+            <h1 class="animate__animated" id="h1"><span style="color: blue;">Perhitungan</span> Gaji Karyawan</h1>
+            <form style="margin: 10px;">
+                <div class="input-box ">
+                    <input type="text" id="input3" placeholder="Masukkan nama karyawan" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="input4" placeholder="Masukkan gaji harian" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="input5" placeholder="Masukkan jumlah hari bekerja" required>
+                </div>
+            </form>
+            <div class="button-container">
+                <button id="cek-button" onclick="namaKaryawan()">Cek</button>
+            </div>
+            <div id="hasil2" style="margin-top: 20px;"></div>
+            <button class="buttonn" id="back-button" onclick="kembali()" style="display: none;">Kembali</button>
+        </div>
+    </div>
+    <div class="paralax content3">
+            
+                <div class="container animate__animated animate__rotateInDownLeft">
+                    <p id="pertanyaan"></p>
+                    <div class="input-box ">
+                        <input type="text" id="jawaban" required>
+                    </div>
+                    <div class="button-container">
+                        <button id="cek-button" onclick="botStart()">Cek</button>
+                    </div>
+                </div>
+          
+        <div id="loaders"></div>
+    </div>
+    <div class="paralax content4 ">
+        <div class="gambar ">
+            <img class="animate__animated animate__heartBeat" src="asset/fo0oter.png" alt="Gambar">
+            <div class="footer animate__animated animate__rollIn">
+                <a href="https://www.facebook.com/profile.php?id=100029479186064" target="_blank" title="Facebook">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/hdnr.yn/" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" target="_blank" title="Twitter">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://wa.me/081259277769" target="_blank">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+                <a href="https://github.com/hadinuryani" target="_blank">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmad-hadi-n-359974308/edit/forms/intro/new/?profileFormEntryPoint=PROFILE_SECTION" target="_blank" title="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <script src="main.js" ></script>
+</body>
+</html>
